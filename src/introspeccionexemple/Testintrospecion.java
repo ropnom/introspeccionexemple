@@ -48,6 +48,9 @@ public class Testintrospecion {
 		}
 
 		// // MEtodos
+		System.out.println();
+		System.out.println("Metodos");
+		System.out.println();
 
 		try {
 			Method[] metodos = Objeto.class.getMethods();
@@ -59,13 +62,17 @@ public class Testintrospecion {
 			e.printStackTrace();
 		}
 
-//		try {
-//			Method m = Objeto.class.getMethod("GetMetal", null);
-//			System.out.println(m.i);
-//			// System.out.println(m.invoke(null, null));
-//		} catch (NoSuchMethodException e) {
-//			e.printStackTrace();
-//		}
+		System.out.println();
+		System.out.println("Realizar metodo metal");
+		System.out.println();
+		try {
+			Method m = Objeto.class.getMethod("getMetal");
+			System.out.println(m.toString());
+			System.out.println(m.invoke(a));
+			// System.out.println(m.invoke(null, null));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 
 	}
 }
