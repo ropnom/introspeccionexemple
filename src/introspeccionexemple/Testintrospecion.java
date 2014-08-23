@@ -76,6 +76,7 @@ public class Testintrospecion {
 			e.printStackTrace();
 		}
 		
+		System.out.println();
 		try {
 			Method m = Objeto.class.getMethod("getShortexemple");
 			System.out.println(m.toString());
