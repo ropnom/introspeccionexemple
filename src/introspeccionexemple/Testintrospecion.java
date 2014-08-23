@@ -81,8 +81,9 @@ public class Testintrospecion {
 			Method m = Objeto.class.getMethod("getShortexemple");
 			System.out.println(m.toString());
 			System.out.println(m.invoke(a));			
-			short l = (short) m.invoke(a);
-			System.out.println("El numero que devuelve la invoacion es: " +l);
+			short l = (short) m.invoke(a);//este a vece sno le gusta
+			short p = (Short) m.invoke(a);
+			System.out.println("El numero que devuelve la invoacion es: " +l+" y la otra invocacion devuelve "+p);
 			// System.out.println(m.invoke(null, null));
 		} catch (Exception e) {
 			e.printStackTrace();
