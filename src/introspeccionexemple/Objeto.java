@@ -6,6 +6,17 @@ public class Objeto {
 	protected int Metal;
 	protected int Cristal;
 	protected int Deuterio;
+	protected short shortexemple;
+
+	
+
+	public short getShortexemple() {
+		return shortexemple;
+	}
+
+	public void setShortexemple(short shortexemple) {
+		this.shortexemple = shortexemple;
+	}
 
 	public Objeto() {
 
@@ -16,6 +27,7 @@ public class Objeto {
 		this.Metal = metal;
 		this.Cristal = cristal;
 		this.Deuterio = deuterio;
+		this.shortexemple = (short) metal;
 		
 	}
 

@@ -68,7 +68,20 @@ public class Testintrospecion {
 		try {
 			Method m = Objeto.class.getMethod("getMetal");
 			System.out.println(m.toString());
-			System.out.println(m.invoke(a));
+			System.out.println(m.invoke(a));			
+			int l = (int) m.invoke(a);
+			System.out.println("El numero que devuelve la invoacion es: " +l);
+			// System.out.println(m.invoke(null, null));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		try {
+			Method m = Objeto.class.getMethod("getShortexemple");
+			System.out.println(m.toString());
+			System.out.println(m.invoke(a));			
+			short l = (short) m.invoke(a);
+			System.out.println("El numero que devuelve la invoacion es: " +l);
 			// System.out.println(m.invoke(null, null));
 		} catch (Exception e) {
 			e.printStackTrace();
